@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #cont {
+ 
+        height:700px;
+        display: grid;
+        grid-template-areas:
+            "head head head head head"
+            "nav main main main sidebar"
+            "nav main main main sidebar"
+            "nav main main main sidebar"
+            "nav main main main sidebar"
+            "foot foot foot foot foot";
+            text-align: center;
+
+
+
+    }
+
+    .header {
+        background-color: teal;
+        grid-area: head;
+        border-bottom: 2px solid white;
+        text-align: center;
+     
+
+    }
+
+    nav {
+        background-color: aqua;
+        grid-area: nav;
+        border-right: 2px solid white;
+        text-align: center;
+    }
+
+    .sidebar {
+        background-color: aqua;
+        grid-area: sidebar;
+        border-left: 2px solid white;
+        
+        text-align: center;
+       
+    }
+
+    .main {
+        background-color: rgb(145, 189, 64);
+        grid-area: main;
+       
+        text-align: center;
+    }
+
+    footer {
+        background-color: teal;
+        grid-area: foot;
+
+        text-align: center;
+
+        
+        border-top: 2px solid white;
+    }
+    @media (max-width:600px){
+        #cont{
+        display: grid;
+        grid-template-areas:
+            "head head head head head"
+            "nav nav nav nav nav"
+            "main main main main main"
+            "sidebar sidebar sidebar sidebar sidebar"
+           
+            "foot foot foot foot foot";
+            text-align: center;
+        }
+    }
+       
+       
+</style>
+
+<body>
+    <section id="cont">
+
+        <article class="header">header</article>
+        <nav>sidenav</nav>
+        <article class="main">main content</article>
+        <article class="sidebar">sidebar</article>
+        <footer>footer</footer>
+    </section>
+
+
+</html>

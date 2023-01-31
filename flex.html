@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: rgb(199, 202, 202);
+            display: flex;
+            
+flex-direction: column;
+            /* align-content: center;*/
+            width: 100%;
+            height: 50%;
+            align-content: space-around;
+            gap: 30px 10px;
+
+
+
+        }
+
+        .nav {
+            background-color: rgb(226, 226, 241);
+            flex-basis: 100%;
+            height: 75px;
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            align-content: center;
+            justify-content: space-around;
+            flex-direction: column;
+
+
+        }
+
+        nav > p {
+
+            font-size: 30px;
+            border: 2px solid bla;
+        }
+
+        .child2 {
+            background-color: aliceblue;
+            height: 300px;
+            flex-basis: 50%;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .child2 > p {
+            font-size: 40px;
+            width: 100%;
+            text-align: center;
+            height: 150px;
+
+        }
+        .child2 > footer {
+            font-size: 30px;
+            background-color: gray;
+            width: 100%;
+            text-align: center;
+
+           
+        }
+
+        .child3 {
+            background-color: aliceblue;
+            height: 300px;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            border: 2px solid black;
+            display: flex;
+            
+        }
+        .child3 > p {
+            font-size: 40px;
+            width: 100%;
+            text-align: center;
+            height: 150px;
+
+        }
+        .child3 > footer {
+            font-size: 30px;
+            background-color: gray;
+            width: 100%;
+            text-align: center;
+        }
+        @media (max-width:600px){
+
+ @import url(flex.css);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <p id="h">Home</p>
+            <p id="a">About</p>
+            <p id="s">Service</p>
+            <p id="c">Contact</p>
+        </nav>
+        <div class="child2">
+            <p>
+                this a flex item
+            </p>
+            <footer>
+                footer
+            </footer>
+        </div>
+
+
+
+        <div class="child3">
+            <p>
+                this a flex item
+            </p>
+            <footer>
+                footer
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

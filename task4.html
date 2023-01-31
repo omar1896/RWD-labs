@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 100px;
+        }
+
+        #container{
+
+            height:400px;
+            width: 400px;
+        display: grid;
+            background-color: aqua;
+            grid-template-areas: 
+            "c1 c2 c2 c2"
+            "c1 c3 c3 c4"
+            "c5 c5 c5 c4";
+            margin: auto;
+          
+   
+    transform: rotate(35deg); 
+}
+
+        
+        #child1{
+            grid-area: c1;
+            background-color: blue;
+            border: 5px solid white;
+           
+        }
+        #child2{
+            grid-area: c2;
+            background-color: blue;
+            border: 5px solid white;
+        }
+        #child3{
+            grid-area: c3;
+            background-color: blue;
+            border: 5px solid white;
+        }
+        #child4{
+            grid-area: c4;
+            background-color: blue;
+            border: 5px solid white;
+        }
+        #child5{
+            grid-area: c5;
+            background-color: blue;
+            border: 5px solid white;
+        }
+
+        @media (max-width:700px) {
+    #container{
+        animation: rotate 2s infinite;
+  
+  width: 300px;
+  height: 300px;
+}
+
+@keyframes rotate {
+    0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+}
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="child1"></div>
+        <div id="child2"></div>
+        <div id="child3"></div>
+        <div id="child4"></div>
+        <div id="child5"></div>
+    </div>
+</body>
+</html>
